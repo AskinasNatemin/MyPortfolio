@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Roboto&display=swap');
+
+@import './variable';
+@import './button';
+
+
+
+.profileImageContainer {
+    img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+}
+
+.profileImageContainer{
+    position: relative;
+    .icon{
+        position: absolute;
+        right: 0;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.dark-bg{
+    background-color: $bg-dark;
+    color: $text-light;
+    .resumeDownloadContainer{
+        button{
+            color: $text-light;
+        }
+    }
+}
+
+.light-bg{
+    background-color: $bg-light;
+    color: $text-dark;
+    .resumeDownloadContainer{
+        button{
+            color: $text-dark;
+        }
+    }
+}
+
+@media(max-width:770px){
+    .profileImageContainer{
+        margin-top: 50px;
+        img{
+            width: 230px;
+            height: 230px;
+        }
+    }
+}
+
+
+/* button */
+
+.resumeDownloadContainer{
+    button{
+        background-color: $btn-bg-color;
+        padding: 4px 9px;
+        border-radius: 8px;
+        color: $btn-color;
+        font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+        a{
+            
+            text-decoration: none;
+        }
+    }
+}
+
+
+.summaryContainer{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+}
+
+.professionContainer,.nameContainer{
+    font-family:"Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.nameContainer span:first-child{
+    font-size:22px;
+}
+.nameContainer span:last-child{
+    font-size:23px;
+}
+/* portfolio profile ends */
+
+
+
+
+
+/* portfolio project starts */
+
+.card{
+    height: 400px;
+    width: 400px;
+}
+
+/* portfolio project ends */
